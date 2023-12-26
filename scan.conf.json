@@ -1,0 +1,35 @@
+{
+  "title": "L37's H4CK!",
+  "items": [
+    {
+      "title": "FFUF",
+      "content": "Finding Web Hidden Treasures",
+      "items": [
+        {
+          "title": "Common (quick)",
+          "content": "ffuf -config ./ffufrc-common.toml"
+        },
+        {
+          "title": "Common (recursive)",
+          "content": "ffuf -config ./ffufrc-commonRec.toml"
+        },
+        { "title": "Files", "content": "ffuf -config ./ffufrc-files.toml" },
+        { "title": "Directories", "content": "ffuf -config ./ffufrc-dir.toml" }
+      ]
+    },
+    {
+      "title": "nmap",
+      "content": "Sherlock of Ports",
+      "items": [
+        { "title": "Vanilla", "content": "echo 'vanilla'" },
+        { "title": "TCP", "content": "echo 'tcp'" },
+        { "title": "UDP", "content": "echo 'udp'" }
+      ]
+    },
+    {
+      "title": "Results",
+      "content": "The Cliffhanger Moment",
+      "items": [{ "title": "ffuf", "content": "go run './ffuf_results.go'" }]
+    }
+  ]
+}

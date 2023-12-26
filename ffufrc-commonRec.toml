@@ -1,0 +1,20 @@
+[http]
+    followredirects = true
+    url = "URL/FUZZ"
+    recursion = true
+    recursion_depth = 3
+
+[general]
+    autocalibration = true
+    colors = true
+    rate = 100
+    verbose = true
+
+[input]
+    wordlists = [
+        "/home/thomas/Hacking/Tools/Wordlists/SecLists/Discovery/Web-Content/common.txt:FUZZ",
+        "./urls_hosts_exemple.md:URL"
+    ]
+
+[output]
+    outputfile = "./scans/ffuf/commonRec.json"
